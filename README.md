@@ -5,6 +5,8 @@ A free, **read-only** host check for **PHP2Shell** (CVE-2026-109618 / CVE-2026-1
 Most free PHP2Shell checkers look at your site from the outside and read the PHP version in the HTTP headers. Many servers hide that header, distro packages backport fixes without changing the version number, and the PHP that serves your site isn't always the `php` in your shell. This script runs **on the server** and checks what is actually there.
 
 > Indicator check only. A clean result is not proof that a host is safe or uncompromised. Only run it on systems you own or are authorised to check.
+> 
+> ![Example: PHP 7.4 CLI and FPM flagged as end-of-life on Ubuntu 20.04](php2shell-hostcheck-SS.png)
 
 ## What it checks
 
