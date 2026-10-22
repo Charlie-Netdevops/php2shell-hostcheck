@@ -17,7 +17,7 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq php-cli >/dev/null
           set +e
-          sudo ./php2shell-hostcheck.sh --json > out.json
+          sudo bash ./php2shell-hostcheck.sh --json > out.json
           code=$?
           set -e
           python3 -c "import json; d=json.load(open('out.json')); print(d['result'])"
